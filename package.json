@@ -1,5 +1,5 @@
 {
-  "name": "JATE",
+  "name": "jate",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,11 +9,17 @@
     "server": "cd server node server.js --ignore client",
     "build": "cd client && npm run build",
     "install": "cd client && npm install ",
-    "client": "cd client  & npm start"
+    "client": "cd client  & npm start",
+    "heroku-prebuild": "npm install --dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SolenIyassu/PWA-JATE.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/SolenIyassu/PWA-JATE",
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4",
@@ -22,6 +28,6 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4",
-    "webpack": "5.51.1"
+    "webpack": "5.69.1"
   }
 }
